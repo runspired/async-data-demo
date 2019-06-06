@@ -1,8 +1,8 @@
-import RequestManager from '../request-manager';
-import MemoryCache from '../memory-cache';
-import LocalCache from '../local-cache';
+import RequestManager from '../data-lib/request-manager';
+import MemoryCache from '../data-lib/memory-cache';
+import LocalCache from '../data-lib/local-cache';
 import WorkerShell from './shell';
-import { Middleware, Request, Response } from '../interfaces';
+import { Middleware, Request, Response } from '../data-lib/interfaces';
 
 export default class WorkerMain implements Middleware {
   private manager = new RequestManager();

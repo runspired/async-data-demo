@@ -21,9 +21,9 @@
     "module": "es6",
     "paths": {
       "dummy/tests/*": ["tests/*"],
-      "dummy/*": ["tests/dummy/app/*", "app/*"],
-      "async-data-demo": ["addon"],
-      "async-data-demo/*": ["addon/*"],
+      "dummy/*": ["app/*", "app/*"],
+      "async-data-demo": ["src"],
+      "async-data-demo/*": ["src/*"],
       "async-data-demo/test-support": ["addon-test-support"],
       "async-data-demo/test-support/*": ["addon-test-support/*"],
       "*": ["types/*"]
@@ -31,10 +31,11 @@
   },
   "include": [
     "app/**/*",
-    "addon/**/*",
+    "src/**/*",
     "tests/**/*",
     "types/**/*",
     "test-support/**/*",
-    "addon-test-support/**/*"
+    "addon-test-support/**/*",
+    "app"
   ]
 }

@@ -26,7 +26,7 @@ export default class AsyncMemoryCache implements Middleware {
       this.idMappings[type][id] = resource;
     }
 
-    console.log(`${isWorker ? 'worker' : 'main'}:in-memory-cache handles IDs ${ids.join(', ')}`);
+    // console.log(`${isWorker ? 'worker' : 'main'}:in-memory-cache handles IDs ${ids.join(', ')}`);
   }
 
   async request(request: Request, next: NextFn): Promise<Response> {

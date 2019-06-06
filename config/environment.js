@@ -1,5 +1,12 @@
 'use strict';
 
-module.exports = function(/* environment, appConfig */) {
-  return { };
+module.exports = function(environment) {
+  let ENV = {
+    modulePrefix: 'async-data-demo',
+    environment,
+    rootURL: '/',
+    locationType: 'hash',
+  };
+
+  return ENV;
 };

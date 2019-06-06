@@ -33,7 +33,7 @@ export default class AsyncLocalCache implements Middleware {
         await promisify(store.put(resource));
       }
 
-      console.log(`${isWorker ? 'worker' : 'main'}:indexdb-cache handles IDs ${ids.join(', ')}`);
+      // console.log(`${isWorker ? 'worker' : 'main'}:indexdb-cache handles IDs ${ids.join(', ')}`);
 
       return this.db;
     });

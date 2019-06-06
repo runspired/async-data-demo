@@ -8,7 +8,9 @@ export interface Request {
 }
 
 export interface Response {
-  content: JSONValue;
+  content: {
+    data: JSONValue;
+  };
 }
 
 export type NextFn = (r: Request) => Promise<Response>;

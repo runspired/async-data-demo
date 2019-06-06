@@ -48,7 +48,6 @@ function makeUser(numFriends: number) {
 }
 
 makeUser(4);
-console.log({ cache: CACHE });
 
 /*
 Makes 16 users
