@@ -23,6 +23,9 @@
     "postpublish": "ember ts:clean"
   },
   "dependencies": {
+    "broccoli-debug": "^0.6.5",
+    "broccoli-funnel": "^2.0.2",
+    "broccoli-rollup": "^4.1.0",
     "ember-cli-babel": "^7.7.3",
     "ember-cli-typescript": "^2.0.1",
     "json-typescript": "^1.1.2"
@@ -40,6 +43,7 @@
     "broccoli-asset-rev": "^3.0.0",
     "ember-cli": "~3.10.1",
     "ember-cli-addon-docs-esdoc": "^0.2.1",
+    "ember-cli-bundle-analyzer": "^0.1.0",
     "ember-cli-dependency-checker": "^3.1.0",
     "ember-cli-eslint": "^5.1.0",
     "ember-cli-htmlbars": "^3.0.1",

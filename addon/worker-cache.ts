@@ -5,7 +5,7 @@ import AppWorker from './app-worker';
 export default class AsyncWorkerCache implements Middleware {
   private worker: AppWorker;
   constructor() {
-    this.worker = new AppWorker('./data-worker.js');
+    this.worker = new AppWorker('./workers/data-worker.js');
   }
 
   async request(request: Request, next: NextFn): Promise<Response> {

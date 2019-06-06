@@ -1,5 +1,5 @@
 import { Value as JSONValue } from 'json-typescript';
-import { Dict, Middleware, NextFn, Request, Response } from './interfaces';
+import { Dict } from './interfaces';
 
 let RequestID = 0;
 
@@ -11,6 +11,7 @@ export default class AppWorker {
 
   constructor(srcUrl: string) {
     this.worker = new Worker(srcUrl);
+    this.initialize();
   }
 
   async send<T>(data: JSONValue[]): Promise<T> {

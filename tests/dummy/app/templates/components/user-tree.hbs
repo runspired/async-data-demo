@@ -1,0 +1,8 @@
+{{user.firstName}} {{user.lastName}}
+<ul>
+    {{#each user.friends as |friend|}}
+    <li>
+        <UserTree @user={{friend.content}} />
+    </li>
+    {{/each}}
+</ul>
